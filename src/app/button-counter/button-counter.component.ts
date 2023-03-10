@@ -7,8 +7,17 @@ import { Component } from '@angular/core';
 })
 export class ButtonCounterComponent {
   count = 0;
+  message = '';
 
   onClick(){
     this.count++;
+  }
+  onDoubleClick(){
+    if(this.message ==''){
+      this.message = "Look at the star";
+    }else{
+      this.message = '';
+    }
+    
   }
 }
